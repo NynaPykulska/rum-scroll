@@ -18,17 +18,16 @@ export class AppComponent implements OnInit {
 
 
     datadogRum.init({
-      applicationId: '085e3340-508d-44ba-89e4-83f663d522a2',
-      clientToken: 'pub51bf97289acd53debf656c966d521287',
+      applicationId: '',
+      clientToken: '',
       site: 'datadoghq.eu',
-      service: 'konsolidatorui',
+      service: 'konsolidatorui-scrolltest',
       version: '0.0.0',
       env: 'test',
       sampleRate: 100,
       trackInteractions: true,
-      allowedTracingOrigins: ['https://uiapi.test.konsolidator.com/api'],
     });
-    // datadogRum.startSessionReplayRecording();
+    datadogRum.startSessionReplayRecording();
   }
 
   getDataFromFile() {

@@ -1,0 +1,13 @@
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow: scroll;
+}
+
+.text {
+
+}
